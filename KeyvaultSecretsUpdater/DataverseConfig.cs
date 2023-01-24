@@ -1,7 +1,6 @@
 ﻿using Azure.Core;
 using Azure.ResourceManager.Resources;
 using System.Net.Http.Headers;
-using System.Net.Http.Json;
 using AASPGlobalLibrary;
 using KeyvaultSecretsUpdater;
 
@@ -54,9 +53,9 @@ namespace SMSAndWhatsAppDeploymentTool
             subids.Clear();
         }
 
-        private async void InstallConfig_Closed(object sender, FormClosedEventArgs e)
+        private void InstallConfig_Closed(object sender, FormClosedEventArgs e)
         {
-            await ChooseDBType.form.Init();
+            ChooseDBType.form.Init();
         }
 
         private void Button2_Click(object sender, EventArgs e)
@@ -67,6 +66,16 @@ namespace SMSAndWhatsAppDeploymentTool
 #pragma warning restore CS8602 // Converting null literal or possible null value to non-nullable type.
 
             this.Close();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

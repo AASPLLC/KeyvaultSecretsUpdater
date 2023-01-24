@@ -29,15 +29,9 @@ namespace KeyvaultSecretsUpdater
         private void CosmosBTN_Click(object sender, EventArgs e)
         {
             form.SetDBType(1);
+            CosmosConfig cosmos = new(this);
             this.Hide();
-        }
-
-        public IntPtr windowHandle;
-        private void ChooseDBType_Load(object sender, EventArgs e)
-        {
-            windowHandle = Handle;
-            NativeWindow nativeWindow = new();
-            nativeWindow.AssignHandle(windowHandle);
+            cosmos.ShowDialog();
         }
     }
 }

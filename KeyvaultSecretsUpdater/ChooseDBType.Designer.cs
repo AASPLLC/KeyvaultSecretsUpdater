@@ -99,7 +99,6 @@
             this.MinimizeBox = false;
             this.Name = "ChooseDBType";
             this.Text = "Choose Database Type";
-            this.Load += new System.EventHandler(this.ChooseDBType_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
