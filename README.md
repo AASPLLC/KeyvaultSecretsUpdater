@@ -17,6 +17,7 @@ These values must be specific, but for reference, this is the format:
   "PAccountsDBPrefix": "",
   "PSMSDBPrefix": "",
   "PWhatsAppDBPrefix": "",
+  "PPhoneNumberDBPrefix": "",
   "PCommsEndpoint": "",
   "PWhatsAppAccess": "",
   "PTenantID": "",
@@ -33,7 +34,10 @@ These values must be specific, but for reference, this is the format:
   "DbName": "",
   "DbName1": "",
   "DbName2": "",
-  "DbName3": ""
+  "DbName3": "",
+  "DbName4": "",
+  "DbName5": "",
+  "AutomationId": ""
 }
 ```
 
