@@ -53,7 +53,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(194, 23);
             this.comboBox1.TabIndex = 1;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -63,7 +62,6 @@
             this.label1.Size = new System.Drawing.Size(195, 15);
             this.label1.TabIndex = 2;
             this.label1.Text = "Select Subscription for deployment:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 

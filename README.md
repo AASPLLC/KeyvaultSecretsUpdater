@@ -37,7 +37,8 @@ These values must be specific, but for reference, this is the format:
   "DbName3": "",
   "DbName4": "",
   "DbName5": "",
-  "AutomationId": ""
+  "AutomationId": "",
+  "SMSTemplate": ""
 }
 ```
 

@@ -57,6 +57,8 @@
             this.label13 = new System.Windows.Forms.Label();
             this.UpdateAPISecretCheck = new System.Windows.Forms.CheckBox();
             this.UpdateStorageCheck = new System.Windows.Forms.CheckBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.smsTemplateTB = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -90,6 +92,7 @@
             // 
             this.whatsappSystemTokenTB.Location = new System.Drawing.Point(198, 85);
             this.whatsappSystemTokenTB.Name = "whatsappSystemTokenTB";
+            this.whatsappSystemTokenTB.PlaceholderText = "Only need if WhatsApp is used";
             this.whatsappSystemTokenTB.Size = new System.Drawing.Size(409, 23);
             this.whatsappSystemTokenTB.TabIndex = 3;
             // 
@@ -97,6 +100,7 @@
             // 
             this.whatsappCallbackTokenTB.Location = new System.Drawing.Point(198, 114);
             this.whatsappCallbackTokenTB.Name = "whatsappCallbackTokenTB";
+            this.whatsappCallbackTokenTB.PlaceholderText = "Only need if WhatsApp is used";
             this.whatsappCallbackTokenTB.Size = new System.Drawing.Size(409, 23);
             this.whatsappCallbackTokenTB.TabIndex = 4;
             // 
@@ -148,16 +152,16 @@
             // 
             // OutputRT
             // 
-            this.OutputRT.Location = new System.Drawing.Point(12, 414);
+            this.OutputRT.Location = new System.Drawing.Point(12, 445);
             this.OutputRT.Name = "OutputRT";
-            this.OutputRT.Size = new System.Drawing.Size(714, 213);
+            this.OutputRT.Size = new System.Drawing.Size(714, 182);
             this.OutputRT.TabIndex = 10;
             this.OutputRT.Text = "";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(318, 396);
+            this.label5.Location = new System.Drawing.Point(345, 427);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 15);
             this.label5.TabIndex = 11;
@@ -176,6 +180,7 @@
             // 
             this.OrgIDTB.Location = new System.Drawing.Point(198, 143);
             this.OrgIDTB.Name = "OrgIDTB";
+            this.OrgIDTB.PlaceholderText = "Only needed for dataverse";
             this.OrgIDTB.Size = new System.Drawing.Size(409, 23);
             this.OrgIDTB.TabIndex = 13;
             // 
@@ -192,6 +197,7 @@
             // 
             this.SMSFuncTB.Location = new System.Drawing.Point(198, 172);
             this.SMSFuncTB.Name = "SMSFuncTB";
+            this.SMSFuncTB.PlaceholderText = "Only need if SMS is used";
             this.SMSFuncTB.Size = new System.Drawing.Size(409, 23);
             this.SMSFuncTB.TabIndex = 15;
             // 
@@ -208,6 +214,7 @@
             // 
             this.WhatsAppFuncTB.Location = new System.Drawing.Point(198, 201);
             this.WhatsAppFuncTB.Name = "WhatsAppFuncTB";
+            this.WhatsAppFuncTB.PlaceholderText = "Only need if WhatsApp is used";
             this.WhatsAppFuncTB.Size = new System.Drawing.Size(409, 23);
             this.WhatsAppFuncTB.TabIndex = 17;
             // 
@@ -224,6 +231,7 @@
             // 
             this.RESTFuncTB.Location = new System.Drawing.Point(198, 230);
             this.RESTFuncTB.Name = "RESTFuncTB";
+            this.RESTFuncTB.PlaceholderText = "Only needed for cosmos";
             this.RESTFuncTB.Size = new System.Drawing.Size(409, 23);
             this.RESTFuncTB.TabIndex = 19;
             // 
@@ -231,6 +239,7 @@
             // 
             this.PrimaryEmailTB.Location = new System.Drawing.Point(198, 259);
             this.PrimaryEmailTB.Name = "PrimaryEmailTB";
+            this.PrimaryEmailTB.PlaceholderText = "Auto Archiving Email Address";
             this.PrimaryEmailTB.Size = new System.Drawing.Size(409, 23);
             this.PrimaryEmailTB.TabIndex = 20;
             // 
@@ -256,6 +265,7 @@
             // 
             this.APIClientIDTB.Location = new System.Drawing.Point(198, 288);
             this.APIClientIDTB.Name = "APIClientIDTB";
+            this.APIClientIDTB.PlaceholderText = "API Registration Applicatrion ID";
             this.APIClientIDTB.Size = new System.Drawing.Size(409, 23);
             this.APIClientIDTB.TabIndex = 23;
             // 
@@ -272,6 +282,7 @@
             // 
             this.SMSEndpointTB.Location = new System.Drawing.Point(198, 317);
             this.SMSEndpointTB.Name = "SMSEndpointTB";
+            this.SMSEndpointTB.PlaceholderText = "Connection String for Azure Communications";
             this.SMSEndpointTB.Size = new System.Drawing.Size(409, 23);
             this.SMSEndpointTB.TabIndex = 25;
             // 
@@ -287,7 +298,7 @@
             // UpdateAPISecretCheck
             // 
             this.UpdateAPISecretCheck.AutoSize = true;
-            this.UpdateAPISecretCheck.Location = new System.Drawing.Point(12, 349);
+            this.UpdateAPISecretCheck.Location = new System.Drawing.Point(12, 375);
             this.UpdateAPISecretCheck.Name = "UpdateAPISecretCheck";
             this.UpdateAPISecretCheck.Size = new System.Drawing.Size(273, 19);
             this.UpdateAPISecretCheck.TabIndex = 27;
@@ -297,18 +308,37 @@
             // UpdateStorageCheck
             // 
             this.UpdateStorageCheck.AutoSize = true;
-            this.UpdateStorageCheck.Location = new System.Drawing.Point(12, 374);
+            this.UpdateStorageCheck.Location = new System.Drawing.Point(12, 400);
             this.UpdateStorageCheck.Name = "UpdateStorageCheck";
             this.UpdateStorageCheck.Size = new System.Drawing.Size(221, 19);
             this.UpdateStorageCheck.TabIndex = 28;
             this.UpdateStorageCheck.Text = "Update Storage Account Primary Key";
             this.UpdateStorageCheck.UseVisualStyleBackColor = true;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(12, 349);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(182, 15);
+            this.label14.TabIndex = 30;
+            this.label14.Text = "SMS 24 Hour Template Response:";
+            // 
+            // smsTemplateTB
+            // 
+            this.smsTemplateTB.Location = new System.Drawing.Point(198, 346);
+            this.smsTemplateTB.Name = "smsTemplateTB";
+            this.smsTemplateTB.PlaceholderText = "Only need if SMS is used";
+            this.smsTemplateTB.Size = new System.Drawing.Size(409, 23);
+            this.smsTemplateTB.TabIndex = 29;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(738, 639);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.smsTemplateTB);
             this.Controls.Add(this.UpdateStorageCheck);
             this.Controls.Add(this.UpdateAPISecretCheck);
             this.Controls.Add(this.label13);
@@ -379,5 +409,7 @@
         internal CheckBox UpdateStorageCheck;
         internal ComboBox PublicCB;
         internal ComboBox InternalCB;
+        private Label label14;
+        internal TextBox smsTemplateTB;
     }
 }

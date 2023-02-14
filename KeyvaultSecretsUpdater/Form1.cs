@@ -70,7 +70,7 @@ namespace KeyvaultSecretsUpdater
             {
 #pragma warning disable CS8604
 #pragma warning disable CS8629
-                await KeyVaultSecretsHandler.CreateKeyVaultSecretsDataverse("0", TenantID.Value, secretNames, PublicV, InternalV, this);
+                await KeyVaultSecretsHandler.CreateKeyVaultSecrets("0", TenantID.Value, secretNames, PublicV, InternalV, this);
 #pragma warning restore CS8604
 #pragma warning restore CS8629
             }
@@ -78,7 +78,7 @@ namespace KeyvaultSecretsUpdater
             {
 #pragma warning disable CS8604
 #pragma warning disable CS8629
-                await KeyVaultSecretsHandler.CreateKeyVaultSecretsDataverse("1", TenantID.Value, secretNames, PublicV, InternalV, this);
+                await KeyVaultSecretsHandler.CreateKeyVaultSecrets("1", TenantID.Value, secretNames, PublicV, InternalV, this);
 #pragma warning restore CS8604
 #pragma warning restore CS8629
             }
